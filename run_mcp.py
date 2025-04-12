@@ -3,6 +3,7 @@ from typing import Any
 from automcp.adapters.crewai import create_crewai_adapter
 from pydantic import BaseModel
 from mcp.server.fastmcp import FastMCP
+import sys, os
 
 # Create MCP server
 mcp = FastMCP("MCP Server")
@@ -12,6 +13,8 @@ warnings.filterwarnings("ignore")
 
 # You'll need to replace these imports with your actual crewai objects
 from crew.crew import MarketingPostsCrew
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Define the input schema for your crewai
