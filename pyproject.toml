@@ -26,5 +26,5 @@ allow-direct-references = true
 include = [ "run_mcp.py",]
 exclude = [ "__pycache__", "*.pyc",]
 sources = [ ".",]
-packages = [ "crew", "."]
+packages = ["."]
 
