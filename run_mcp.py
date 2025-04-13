@@ -25,7 +25,7 @@ class InputSchema(BaseModel):
     # Add more parameters as needed
 
 
-name = "Marketing Posts Crew"
+name = "Marketing_Posts_Crew"
 description = "A crew that posts marketing posts to a social media platform"
 
 # Create an adapter for crewai
